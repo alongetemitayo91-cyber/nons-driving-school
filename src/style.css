@@ -51,7 +51,6 @@ textarea {
   padding: 100px 0;
 }
 
-
 /* ==============================
    HEADER
 ================================ */
@@ -133,7 +132,6 @@ textarea {
   cursor: pointer;
 }
 
-
 /* ==============================
    BUTTONS
 ================================ */
@@ -181,7 +179,6 @@ textarea {
   background: white;
   color: var(--navy);
 }
-
 
 /* ==============================
    HERO
@@ -284,7 +281,6 @@ textarea {
   line-height: 1.2;
 }
 
-
 /* ==============================
    QUICK INFORMATION
 ================================ */
@@ -331,7 +327,6 @@ textarea {
   font-size: 12px;
 }
 
-
 /* ==============================
    SECTION HEADINGS
 ================================ */
@@ -374,7 +369,6 @@ textarea {
   color: var(--text);
   margin-top: 15px;
 }
-
 
 /* ==============================
    ABOUT
@@ -447,7 +441,6 @@ textarea {
 .text-link:hover {
   color: var(--navy);
 }
-
 
 /* ==============================
    LESSONS
@@ -524,7 +517,6 @@ textarea {
   font-size: 14px;
 }
 
-
 /* ==============================
    WHY CHOOSE US
 ================================ */
@@ -583,7 +575,6 @@ textarea {
   font-size: 13px;
   margin-top: 5px;
 }
-
 
 /* ==============================
    PRICING
@@ -659,7 +650,6 @@ textarea {
   font-size: 12px;
   margin-top: 25px;
 }
-
 
 /* ==============================
    BOOKING
@@ -763,7 +753,6 @@ textarea {
   margin-top: 12px;
 }
 
-
 /* ==============================
    CONTACT
 ================================ */
@@ -785,10 +774,68 @@ textarea {
 .contact-actions {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 12px;
   flex-wrap: wrap;
 }
 
+.btn-whatsapp {
+  background: #1da765;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background: #12834d;
+  transform: translateY(-2px);
+}
+
+.email-contact {
+  position: relative;
+}
+
+.email-contact summary {
+  list-style: none;
+}
+
+.email-contact summary::-webkit-details-marker {
+  display: none;
+}
+
+.email-contact summary::after {
+  content: " ▾";
+}
+
+.email-contact[open] summary::after {
+  content: " ▴";
+}
+
+.email-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+  padding: 18px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(18, 59, 112, 0.12);
+  z-index: 10;
+}
+
+.email-dropdown span {
+  display: block;
+  color: var(--text);
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.email-dropdown a {
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
 
 /* ==============================
    FOOTER
@@ -828,7 +875,6 @@ textarea {
   color: white;
 }
 
-
 /* ==============================
    FLOATING WHATSAPP
 ================================ */
@@ -851,13 +897,11 @@ textarea {
   background: #12834d;
 }
 
-
 /* ==============================
    RESPONSIVE DESIGN
 ================================ */
 
 @media (max-width: 900px) {
-
   .nav-links {
     gap: 17px;
   }
@@ -871,12 +915,9 @@ textarea {
   .hero-price {
     right: 5%;
   }
-
 }
 
-
 @media (max-width: 700px) {
-
   .section {
     padding: 70px 0;
   }
@@ -986,12 +1027,9 @@ textarea {
     right: 15px;
     bottom: 15px;
   }
-
 }
 
-
 @media (max-width: 400px) {
-
   .hero h1 {
     font-size: 36px;
   }
@@ -1004,5 +1042,4 @@ textarea {
   .hero-price {
     display: none;
   }
-
 }
