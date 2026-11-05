@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nonsdrivingschool.uk/sitemap.xml
