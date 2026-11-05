@@ -7,9 +7,7 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 
-  menuToggle.textContent = navLinks.classList.contains("active")
-    ? "✕"
-    : "☰";
+  menuToggle.textContent = navLinks.classList.contains("active") ? "✕" : "☰";
 });
 
 // CLOSE MENU AFTER CLICKING A LINK
@@ -58,8 +56,7 @@ ${message || "None"}
 Please get back to me with more information. Thank you!
   `;
 
-  const whatsappURL =
-    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   window.open(whatsappURL, "_blank");
 });
