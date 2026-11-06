@@ -18,8 +18,6 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-// AUTOMATIC FOOTER YEAR
-document.getElementById("year").textContent = new Date().getFullYear();
 
 // BOOKING FORM
 const bookingForm = document.getElementById("bookingForm");
