@@ -1083,6 +1083,13 @@ textarea {
   font-size: 14px;
 }
 
+.review-instructor {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
 @media (max-width: 1000px) {
   .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
