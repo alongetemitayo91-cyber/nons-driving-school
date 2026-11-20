@@ -1,5 +1,3 @@
-import "./style.css";
-
 // MOBILE NAVIGATION
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
