@@ -307,7 +307,7 @@
 
         <!-- REVIEWS SECTION -->
         <section class="section reviews-section" id="reviews">
-        <div class="reviews-grid">
+        <div class="reviews-grid" id="reviewsGrid">
           <article class="review-card">
             <div class="review-stars">★★★★★</div>
             <p>
@@ -348,6 +348,76 @@
             <span class="review-instructor">Instructor: Muhammad</span>
           </article>
         </div>
+
+<!-- REVIEW SUBMISSION FORM -->
+<div class="review-submit-section">
+  <h3>Share Your Experience</h3>
+  <p>Have you learned with us? We'd love to hear your feedback.</p>
+
+  <form id="reviewForm" class="review-form">
+
+    <label for="reviewerName">Your Name</label>
+    <input
+      type="text"
+      id="reviewerName"
+      placeholder="Enter your name"
+      minlength="2"
+      maxlength="60"
+      required
+    />
+
+    <label for="reviewInstructor">Your Instructor</label>
+
+<select id="reviewInstructor" required>
+  <option value="">Select your instructor</option>
+  <option value="Penelope">Penelope</option>
+  <option value="Smith">Smith</option>
+  <option value="Abdullahi">Abdullahi</option>
+  <option value="Muhammad">Muhammad</option>
+  <option value="Other">Other — enter name</option>
+</select>
+
+<input
+  type="text"
+  id="customInstructor"
+  placeholder="Enter your instructor's name"
+  maxlength="60"
+  hidden
+/>
+
+    <label for="reviewRating">Your Rating</label>
+    <select id="reviewRating" required>
+      <option value="">Select a rating</option>
+      <option value="5">★★★★★ - Excellent</option>
+      <option value="4">★★★★ - Very Good</option>
+      <option value="3">★★★ - Good</option>
+      <option value="2">★★ - Fair</option>
+      <option value="1">★ - Poor</option>
+    </select>
+
+    <label for="reviewText">Your Review</label>
+    <textarea
+      id="reviewText"
+      rows="5"
+      minlength="10"
+      maxlength="1000"
+      placeholder="Tell us about your learning experience..."
+      required
+    ></textarea>
+
+    <button type="submit" class="btn btn-primary">
+      Submit Review
+    </button>
+
+    <p id="reviewFormMessage" role="status"></p>
+
+    <small>
+      Your review will be checked before appearing publicly.
+    </small>
+
+  </form>
+</div>
+
 
         <!-- PRICING SECTION -->
         <section class="section pricing-section" id="pricing">
