@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="robots" content="noindex, nofollow" />
+
+    <meta name="theme-color" content="#123b70" />
+
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+
+    <title>Reviews Dashboard | Non's Driving School</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="admin-body">
+    <main class="admin-container">
+      <!-- LOGIN SECTION -->
+      <section id="loginSection" class="login-card">
+        <div class="admin-logo">
+          <span class="admin-logo-icon">N</span>
+          <div>
+            <strong>NON'S</strong>
+            <small>DRIVING SCHOOL</small>
+          </div>
+        </div>
+
+        <h1>Admin Login</h1>
+
+        <p class="login-description">Sign in to manage customer reviews.</p>
+
+        <form id="loginForm">
+          <label for="adminEmail">Email address</label>
+
+          <input
+            type="email"
+            id="adminEmail"
+            placeholder="Enter your email"
+            autocomplete="username"
+            required
+          />
+
+          <label for="adminPassword">Password</label>
+
+          <input
+            type="password"
+            id="adminPassword"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+          />
+
+          <button type="submit" id="loginButton" class="admin-button">
+            Sign In
+          </button>
+
+          <p id="loginMessage" class="admin-message" role="status"></p>
+        </form>
+
+        <a href="/" class="back-link">← Back to website</a>
+      </section>
+
+      <!-- DASHBOARD SECTION -->
+      <section id="dashboardSection" class="dashboard-section" hidden>
+        <header class="dashboard-header">
+          <div class="admin-logo">
+            <span class="admin-logo-icon">N</span>
+            <div>
+              <strong>NON'S</strong>
+              <small>DRIVING SCHOOL</small>
+            </div>
+          </div>
+
+          <button id="logoutButton" class="logout-button">Log Out</button>
+        </header>
+
+        <div class="dashboard-heading">
+          <div>
+            <span class="dashboard-label">ADMINISTRATION</span>
+            <h1>Reviews Management</h1>
+            <p>View and manage customer feedback.</p>
+          </div>
+
+          <button id="refreshButton" class="refresh-button">↻ Refresh</button>
+        </div>
+
+        <div class="stats-card">
+          <div>
+            <span>Total Customer Reviews</span>
+            <strong id="reviewCount">0</strong>
+          </div>
+
+          <span class="stats-icon">★</span>
+        </div>
+
+        <div class="reviews-panel">
+          <div class="reviews-panel-header">
+            <div>
+              <h2>Customer Reviews</h2>
+              <p>Manage reviews published on your website.</p>
+            </div>
+          </div>
+
+          <div
+            id="dashboardMessage"
+            class="dashboard-message"
+            role="status"
+          ></div>
+
+          <div id="reviewsList" class="admin-reviews-list">
+            <div class="empty-state">Loading reviews...</div>
+          </div>
+        </div>
+
+        <footer class="admin-footer">
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            View public website
+          </a>
+
+          <span>Non's Driving School</span>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/admin.js"></script>
+  </body>
+</html>

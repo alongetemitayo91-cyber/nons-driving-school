@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nonsdrivingschool.uk/sitemap.xml
+User-agent: *
+Disallow: /admin.html
+Disallow: /admin

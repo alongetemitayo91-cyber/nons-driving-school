@@ -1182,3 +1182,14 @@ textarea {
     margin-top: 40px;
   }
 }
+
+.admin-access-link {
+  color: #718096;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.admin-access-link:hover {
+  color: #2878c8;
+}
